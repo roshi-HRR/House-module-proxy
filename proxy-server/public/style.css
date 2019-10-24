@@ -1,0 +1,28 @@
+
+#main {
+    grid-area: main;
+  }
+.app-style {
+    grid-area: booking;
+    margin-top: 500px;
+    margin-right: 10%;
+  }
+#root {
+    grid-area: root;
+    margin-top: 50px;
+    box-sizing: border-box;
+  }
+#more {
+    grid-area: more;
+  }
+    
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "main main main main"
+    ". root booking ."
+    ". more more .";
+}
